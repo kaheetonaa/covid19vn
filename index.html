@@ -4,19 +4,20 @@
       <div id="title"></div>
       <div id="inputdata"></div>
       <div id="description"></div>
-      <div id="timescale"></div>
+      <div id="slider"></div>
       <div id="visualization"></div>
       </div>
     </div>
 
     <script type="module">
       import {Runtime} from "https://unpkg.com/@observablehq/runtime@4/dist/runtime.js";
-      import notebook from "https://api.observablehq.com/@kuquanghuylcb/covid-19-data.js?v=3";
+      import notebook from "https://api.observablehq.com/@kuquanghuylcb/vietnamese-covid-19-data.js?v=3";
       const renders = {
         "title":"#title",
         "inputdata":"#inputdata",
         "description":"#description",
-        "visualization": "#visualization",
+        "select01": "#slider",
+        "visualization3": "#visualization",
         "chart": "#timescale"
       };
       function render(_node, value) {
